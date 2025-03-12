@@ -145,9 +145,9 @@ async def main():
             template_url = None
             template = None
 
-    print(f"""Template info:
-\tName       : {template["name"]}
-\tDescription: {template["description"]}""")
+    print(f"""A new server called "{template["name"]}" will be created.
+{len(template["channels"])} channels and {len(template["roles"])} roles will be added to the server.""")
+    if input("type Y to continue, anything else to cancel: ").lower()[0] != "y": return
     
     client = None
     server = None
