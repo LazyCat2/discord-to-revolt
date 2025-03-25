@@ -1,6 +1,7 @@
 import pyvolt
 import json
 import asyncio
+import requests
 
 TEMPLATE_IMPORT_STEPS = 5
 
